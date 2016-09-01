@@ -1,0 +1,14 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+jar {
+  baseName = 'MyBot'
+  manifest {
+    attributes 'Main-Class': 'LeftyBot'
+  }
+}
+
+task zip(type: Zip) {
+    from jar
+    baseName = 'ants-java'
+}

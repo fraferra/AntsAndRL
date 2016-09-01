@@ -1,0 +1,2 @@
+rm ants-python.zip
+zip -j ants-python.zip *.py
